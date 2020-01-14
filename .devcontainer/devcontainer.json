@@ -1,0 +1,12 @@
+{
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "lfs2s3",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+	"extensions": [
+		"mauve.terraform"
+	],
+	"postCreateCommand": "mkdir -p /root/.ssh && cp -r /root/.ssh-localhost/* /root/.ssh && chmod 700 /root/.ssh && chmod 600 /root/.ssh/*"
+}

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  lfs2s3:
+    build:
+      context: ../
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ../:/workspace
+      - ~/.aws:/root/.aws
+      - ~/.gitconfig:/root/.gitconfig
+    command: sleep infinity
